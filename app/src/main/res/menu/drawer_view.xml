@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/android"
+            android:icon="@drawable/ic_android_black_24dp"
+            android:title="@string/android"/>
+        <item android:id="@+id/rateUs"
+            android:icon="@drawable/ic_stars_black_24dp"
+            android:title="@string/rateUs"/>
+        <item android:id="@+id/donate"
+            android:icon="@drawable/ic_monetization_on_black_24dp"
+            android:title="@string/donate"/>
+        <item android:id="@+id/feedback"
+            android:icon="@drawable/ic_announcement_black_24dp"
+            android:title="@string/feedback"/>
+        <item android:id="@+id/moreTutorials"
+            android:icon="@drawable/ic_apps_black_24dp"
+            android:title="@string/moretutorials"/>
+    </group>
+</menu>

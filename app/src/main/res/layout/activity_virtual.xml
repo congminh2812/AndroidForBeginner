@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Tutorials.Item.Introduction_Child.VirtualActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_virtual"
+        android:layout_width="match_parent"
+        android:background="@color/colorGreenLight"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/AppTheme.AppBarOverLay"/>
+    <LinearLayout
+        android:background="@drawable/bg_line_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dalvik Tirtual Machine:"
+            android:textColor="#000"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/toolbar_symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image_virtual_child"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+
+            />
+        <TextView
+            android:id="@+id/row_one_text_view"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="Row One"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/bg_line_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/row_two_text_view"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="Row One"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/bg_line_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/row_three_text_view"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="Row One"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

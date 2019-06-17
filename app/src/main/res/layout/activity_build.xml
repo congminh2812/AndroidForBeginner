@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Tutorials.Item.Introduction_Child.BuildActivity">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_build"
+            android:layout_width="match_parent"
+            android:background="@color/colorGreenLight"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/AppTheme.AppBarOverLay"/>
+        <LinearLayout
+            android:background="@drawable/bg_line_horizontal"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="Create an Android Project"
+                android:textSize="22sp"
+                />
+            <TextView
+                android:id="@+id/row_one_text_view"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text=""
+                android:textSize="16sp"
+                />
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:src="@drawable/image_build1"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                />
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:src="@drawable/image_build2"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                />
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:src="@drawable/image_build3"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                />
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:src="@drawable/image_build4"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                />
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:src="@drawable/image_build5"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

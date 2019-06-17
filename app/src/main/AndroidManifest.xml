@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.androidforbeginner">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_android_128"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+
+        android:theme="@style/AppTheme.NoAcTionBar">
+        <activity android:name=".Quiz.QuestionActivity"  android:screenOrientation="portrait"></activity>
+        <activity android:name=".Examples.SQLite.EDeleteRunActivity" android:screenOrientation="portrait" />
+        <activity android:name=".Examples.SQLite.EDeleteActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.SQLite.EUpdateRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.SQLite.EUpdateActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.SQLite.EReadRunActivity" android:screenOrientation="portrait" />
+        <activity android:name=".Examples.SQLite.EReadActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.SQLite.EInsertRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.SQLite.EInsertActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.DataStorage.ECacheRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.DataStorage.ECacheActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.DataStorage.EPublicRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.DataStorage.EPublicActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.DataStorage.EExternalRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.DataStorage.EExternalActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.DataStorage.EInternalRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.DataStorage.EInternalActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.DataStorage.ESharedRunActivity" android:screenOrientation="portrait" />
+        <activity android:name=".Examples.DataStorage.ESharedActivity" android:screenOrientation="portrait" />
+        <activity android:name=".Examples.Animation.EBlinkRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Animation.EBlinkActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Animation.EBounceRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Animation.EBounceActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Animation.ERotateRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Animation.ERotateActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Animation.EZoomRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Animation.EZoomActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Animation.EFadeRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Animation.EFadeActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Acitivity_Fragment.EDialogFragRunActivity" android:screenOrientation="portrait" />
+        <activity android:name=".Examples.Acitivity_Fragment.EDialogFragActivity" android:screenOrientation="portrait" />
+        <activity android:name=".Examples.Acitivity_Fragment.EListFragRunActivity" android:screenOrientation="portrait" />
+        <activity android:name=".Examples.Acitivity_Fragment.EListFragActivity" android:screenOrientation="portrait" />
+        <activity android:name=".Examples.Acitivity_Fragment.EFragLifeRunActivity" android:screenOrientation="portrait" />
+        <activity android:name=".Examples.Acitivity_Fragment.EFragLifeActivity" android:screenOrientation="portrait" />
+        <activity android:name=".Examples.Acitivity_Fragment.EActLifeRunActivity" android:screenOrientation="portrait" />
+        <activity android:name=".Examples.Acitivity_Fragment.EActLifeActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Menu.EPopUpRunActivity" android:screenOrientation="portrait" />
+        <activity android:name=".Examples.Menu.EPopUpActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Menu.EOptionRunActivity" android:screenOrientation="portrait" />
+        <activity android:name=".Examples.Menu.EOptionActivity" android:screenOrientation="portrait" />
+        <activity android:name=".Examples.Menu.EContextRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Menu.EContextActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Containers.ESearchViewRunActivity" android:screenOrientation="portrait" />
+        <activity android:name=".Examples.Containers.ESearchViewActivity" android:screenOrientation="portrait" />
+        <activity android:name=".Examples.Containers.EWebViewRunActivity" android:screenOrientation="portrait" />
+        <activity android:name=".Examples.Containers.EWebViewActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Containers.EGridViewRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Containers.EGridViewActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Containers.ECusListViewRunActivity" android:screenOrientation="portrait" />
+        <activity android:name=".Examples.Containers.ECusListViewActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Containers.EListViewRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Containers.EListViewActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Toast.ECustomRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Toast.ECustomActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Toast.EMessageRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Toast.EMessageActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Toast.ESimpleRunActivity" android:screenOrientation="portrait" />
+        <activity android:name=".Examples.Toast.ESimpleActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.ExplicitIntent.EForResultRun2Activity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.ExplicitIntent.EForResultRunActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.ExplicitIntent.EForResultActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.ExplicitIntent.EPassingRun2Activity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.ExplicitIntent.EPassingRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.ExplicitIntent.EPassingActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.ExplicitIntent.ETransitionRun2Activity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.ExplicitIntent.ETransitionRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.ExplicitIntent.ETransitionActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.ImplicitIntent.ECameraRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.ImplicitIntent.ECameraActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.ImplicitIntent.EDialRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.ImplicitIntent.EDialActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.ImplicitIntent.ECallRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.ImplicitIntent.ECallActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.ImplicitIntent.EMapRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.ImplicitIntent.EMapActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.ImplicitIntent.EEmailRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.ImplicitIntent.EEmailActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.DateTime.EChronometerRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.DateTime.EChronometerActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.DateTime.ETimePickerRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.DateTime.ETimePickerActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.DateTime.EDatePickerRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.DateTime.EDatePickerActivity" android:screenOrientation="portrait" />
+        <activity android:name=".Examples.DateTime.ETextClockRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.DateTime.ETextClockActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.ImageAndMedia.EVideoViewRunActivity" android:screenOrientation="portrait" />
+        <activity android:name=".Examples.ImageAndMedia.EVideoViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.ImageAndMedia.EImageViewRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.ImageAndMedia.EImageViewActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.ImageAndMedia.EImageButtonRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.ImageAndMedia.EImageButtonActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Widgets.EViewFlipperRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Widgets.EViewFlipperActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Widgets.EImageSwitcherRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Widgets.EImageSwitcherActivity" android:screenOrientation="portrait" />
+        <activity android:name=".Examples.Widgets.ETextSwitcherRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Widgets.ETextSwitcherActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Widgets.ECheckedRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Widgets.ECheckedActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Widgets.EMutilAutoRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Widgets.EMutilAutoActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Widgets.EAutoCompleteRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Widgets.EAutoCompleteActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Widgets.ESpinnerRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Widgets.ESpinnerActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Widgets.EToggleRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Widgets.EToggleActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Widgets.ESwitchRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Widgets.ESwitchActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Widgets.ESeekBarRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Widgets.ESeekBarActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Widgets.EProgressRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Widgets.EProgressActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Widgets.ERatingBarRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Widgets.ERatingBarActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Widgets.ECheckBoxRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Widgets.ECheckBoxActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Widgets.ERadioRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Widgets.ERadioActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Widgets.EButtonRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Widgets.EButtonActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Widgets.EEditTextRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Widgets.EEditTextActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Widgets.ETextViewRunActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Examples.Widgets.ETextViewActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.PhpMySQL_Child.RegisterActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.PhpMySQL_Child.LoginActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.PhpMySQL_Child.IntroActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.PhpMySQLActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.SQLite_Child.DeleteActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.SQLite_Child.UpdateActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.SQLite_Child.ReadActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.SQLite_Child.InsertActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.SQLite_Child.CreateActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.SQLiteActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.DataStorage_Child.SQLiteChildActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.DataStorage_Child.CacheActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.DataStorage_Child.ExternalActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.DataStorage_Child.InternalActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.DataStorage_Child.SharedPreferenceActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.DataStorage_Child.DataStorageChildActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.DataStorageActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.Containers_Child.SearchViewActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.Containers_Child.WebViewActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.Containers_Child.GridViewActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.Containers_Child.CustomListActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.Containers_Child.ListViewActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.ContainersActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.Menu_Child.PopUpMenuActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.Menu_Child.ContextMenuActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.Menu_Child.OptionMenuActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.Menu_Child.MenuItemActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.MenuActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.FragAndAct_Child.InterFragActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.FragAndAct_Child.FragXmlActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.FragAndAct_Child.FragJavaActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.FragAndAct_Child.Intent2Activity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.FragAndAct_Child.Intent1Activity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.FragAndAct_Child.LifeCycleActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.FragAndActActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.UIWidgets_Child.RatingBarActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.UIWidgets_Child.AlertActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.UIWidgets_Child.AutoCompleteActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.UIWidgets_Child.ToastActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.UIWidgets_Child.TimePickerActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.UIWidgets_Child.DatePickerActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.UIWidgets_Child.ProgressBarActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.UIWidgets_Child.SpinnerActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.UIWidgets_Child.CheckBoxActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.UIWidgets_Child.RadioActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.UIWidgets_Child.ToggleActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.UIWidgets_Child.ImageButtonActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.UIWidgets_Child.EditTextActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.UIWidgets_Child.ButtonActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.UIWidgets_Child.UIIntroActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.UIWidgetActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.Layouts_Child.FrameActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.Layouts_Child.TableActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.Layouts_Child.RelativeActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.Layouts_Child.LinearActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.Layouts_Child.IntroLayoutActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.Layouts_Child.ViewActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.LayoutActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.Structure_Child.StylesActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.Structure_Child.StringsActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.Structure_Child.ResActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.Structure_Child.JavaActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.Structure_Child.ManifestActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.Structure_Child.ModuleActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.Structure_Child.StructureChildActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.StructureActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.Introduction_Child.BuildActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.Introduction_Child.SetupActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.Introduction_Child.ComponentsActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.Introduction_Child.VirtualActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.Introduction_Child.WhysActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.Introduction_Child.StackActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.Introduction_Child.SymbolsActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.Introduction_Child.HistoryActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Tutorials.Item.Introduction_Child.IntroductionChildActivity"  android:screenOrientation="portrait"/>
+        <activity android:screenOrientation="portrait"
+            android:name=".Tutorials.Item.IntroductionActivity"
+            android:theme="@style/AppTheme.NoAcTionBar" />
+        <activity
+            android:name=".BackgroundActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoAcTionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoAcTionBar" />
+    </application>
+
+</manifest>

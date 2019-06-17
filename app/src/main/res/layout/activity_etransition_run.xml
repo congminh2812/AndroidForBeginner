@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#6666FF"
+    tools:context=".Examples.ExplicitIntent.ETransitionRunActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/colorGreenLight"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.AppBarOverLay"
+        android:layout_height="?attr/actionBarSize">
+
+    </android.support.v7.widget.Toolbar>
+    <TextView
+        android:id="@+id/text_view1"
+        android:textSize="48sp"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:onClick="btnClickAct1"
+        android:text="Go to Activity 2"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
