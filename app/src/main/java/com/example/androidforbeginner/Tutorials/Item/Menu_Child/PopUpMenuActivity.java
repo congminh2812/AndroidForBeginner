@@ -7,6 +7,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.example.androidforbeginner.R;
+import com.example.androidforbeginner.StatusBar;
 
 public class PopUpMenuActivity extends AppCompatActivity {
 
@@ -17,7 +18,7 @@ public class PopUpMenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pop_up_menu);
         setTitle(getString(R.string.popup_menu));
-
+        StatusBar.changingStatusBar(this);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -32,63 +33,63 @@ public class PopUpMenuActivity extends AppCompatActivity {
         codeThree = findViewById(R.id.code3);
         codeFour = findViewById(R.id.code4);
 
-        String rowOne = "Android PopUp Menu: \n" +
+        String rowOne = "<b><u>* Android PopUp Menu: </u></b><br/>" +
                 " Android Popup Menu displays the menu below the anchor text if space is available otherwise above the anchor text. \n" +
                 "\n" +
-                "1. Define menu items in res/menu.xml \n ";
-        String rowTwo = "2. If you define your menu in XML, here's how you can show the popup menu:\n" +
+                "<i>1. Define menu items in res/menu.xml </i> ";
+        String rowTwo = "<i>2. If you define your menu in XML, here's how you can show the popup menu:</i><br/>" +
                 " E.g A button with the android:onClick attribute that shows a popup menu: \n";
-        String rowThree = "3. The activity can then show the popup menu like this: ";
-        String rowFour = "4. Define Click Events ";
+        String rowThree = "<i>3. The activity can then show the popup menu like this: </i>";
+        String rowFour = "<i>4. Define Click Events </i>";
 
-        String code1 = "<menu xmlns:androclass=\"http://schemas.android.com/apk/res/android\" >\n" +
-                " <item android:id=\"@+id/item1\" \n" +
-                "android:title=\"Item 1\"/> \n" +
-                "<item android:id=\"@+id/item2\" \n" +
-                "android:title=\"Item 2\"/>\n" +
-                " <item android: id=\"@+id/item3\"\n" +
-                " android:title=\"Item 3\"/> \n" +
+        String code1 = "<menu xmlns:android=\"http://schemas.android.com/apk/res/android\" >\n" +
+                "   <item android:id=\"@+id/item1\" \n" +
+                "   android:title=\"Item 1\"/> \n" +
+                "   <item android:id=\"@+id/item2\" \n" +
+                "   android:title=\"Item 2\"/>\n" +
+                "   <item android: id=\"@+id/item3\"\n" +
+                "   android:title=\"Item 3\"/> \n" +
                 "</menu>\n";
         String code2 = "<ImageButton\n" +
-                " android:layout_width=\"wrap_content\"\n" +
-                " android:layout_height=\"wrap_content\"\n" +
-                " android:src=\"@drawable/ic_overflow_holo_dark\"\n" +
-                " android: contentDescription=\"@string/descr_overflow_button\"\n" +
-                " android:onClick=\"showPopup\" /> \n";
+                "   android:layout_width=\"wrap_content\"\n" +
+                "   android:layout_height=\"wrap_content\"\n" +
+                "   android:src=\"@drawable/ic_overflow_holo_dark\"\n" +
+                "   android: contentDescription=\"@string/descr_overflow_button\"\n" +
+                "   android:onClick=\"showPopup\" /> \n";
         String code3 = "public void showPopup(View v) {\n" +
-                " PopupMenu popup = new PopupMenu(this, v); \n" +
+                "   PopupMenu popup = new PopupMenu(this, v); \n" +
                 "\n" +
-                "Menulnflater inflater = popup.getMenuInflater(); \n" +
-                "inflater.inflate(R.menu.actions, popup.getMenu()); \n" +
-                "popup.show(); \n" +
+                "   MenuInflater inflater = popup.getMenuInflater(); \n" +
+                "   inflater.inflate(R.menu.actions, popup.getMenu()); \n" +
+                "   popup.show(); \n" +
                 "}\n";
         String code4 = "public void showMenu(View v) {\n" +
-                " PopupMenu popup = new PopupMenu(this, v);\n" +
-                " Menulnflater inflater = popup.getMenuInflater(); \n" +
-                "inflater.inflate(R.menu.actions, popup.getMenu()); \n" +
-                "// This activity implements \n" +
-                "]OnMenultemClickListener popup.setOnMenuItemClickListener(this); \n" +
-                "\tpopup.show();\n" +
-                "}\n" +
+                "   PopupMenu popup = new PopupMenu(this, v);\n" +
+                "   MenuInflater inflater = popup.getMenuInflater(); \n" +
+                "   inflater.inflate(R.menu.actions, popup.getMenu()); \n" +
+                "   // This activity implements \n" +
+                "   OnMenuItemClickListener popup.setOnMenuItemClickListener(this); \n" +
+                "   \tpopup.show();\n" +
+                "   }\n" +
                 "\n" +
                 "@Override\n" +
-                " public boolean onMenuItemClick(MenuItem item) {\n" +
-                " switch (item.getItemId()) { \n" +
-                "case R.id.archive: \n" +
-                "//Your Code Here return true; \n" +
-                "case R.id.delete: \n" +
-                "//Your Code Here return true; \n" +
-                "default: \n" +
-                "return false;\n" +
-                "\t}\n" +
+                "   public boolean onMenuItemClick(MenuItem item) {\n" +
+                "       switch (item.getItemId()) { \n" +
+                "           case R.id.archive: \n" +
+                "           //Your Code Here return true; \n" +
+                "           case R.id.delete: \n" +
+                "           //Your Code Here return true; \n" +
+                "           default: \n" +
+                "               return false;\n" +
+                "   \t}\n" +
                 "}\n";
 
 
 
-        rowOneTextView.setText(rowOne);
-        rowTwoTextView.setText(rowTwo);
-        rowThreeTextView.setText(rowThree);
-        rowFourTextView.setText(rowFour);
+        rowOneTextView.setText(android.text.Html.fromHtml(rowOne));
+        rowTwoTextView.setText(android.text.Html.fromHtml(rowTwo));
+        rowThreeTextView.setText(android.text.Html.fromHtml(rowThree));
+        rowFourTextView.setText(android.text.Html.fromHtml(rowFour));
 
         codeOne.setText(code1);
         codeTwo.setText(code2);

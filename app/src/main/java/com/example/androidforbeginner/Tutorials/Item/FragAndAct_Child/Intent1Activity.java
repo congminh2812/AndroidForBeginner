@@ -7,6 +7,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.example.androidforbeginner.R;
+import com.example.androidforbeginner.StatusBar;
 
 public class Intent1Activity extends AppCompatActivity {
     TextView textView1,textView2,textView3,code1,code2;
@@ -15,7 +16,7 @@ public class Intent1Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intent1);
         setTitle(getString(R.string.intent));
-
+        StatusBar.changingStatusBar(this);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

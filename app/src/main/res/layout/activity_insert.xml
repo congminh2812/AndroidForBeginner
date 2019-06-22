@@ -20,11 +20,130 @@
             android:padding="5dp"
             >
             <TextView
+                android:id="@+id/row_one_text_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/row_one_text_view"
                 android:textColor="#000"
-                />
+                android:textSize="16dp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_code"
+                android:padding="3dp">
+
+                <TextView
+                    android:id="@+id/code1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Blue"
+                    android:textSize="16dp" />
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/row_two_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="16dp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_code"
+                android:padding="3dp">
+
+                <TextView
+                    android:id="@+id/code2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Blue"
+                    android:textSize="16dp" />
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/row_three_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="16dp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_code"
+                android:padding="3dp">
+
+                <TextView
+                    android:id="@+id/code3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Blue"
+                    android:textSize="16dp" />
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/row_four_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="16dp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_code"
+                android:padding="3dp">
+
+                <TextView
+                    android:id="@+id/code4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Blue"
+                    android:textSize="16dp" />
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/row_five_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="16dp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_code"
+                android:padding="3dp">
+
+                <TextView
+                    android:id="@+id/code5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Blue"
+                    android:textSize="16dp" />
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/row_six_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="16dp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_code"
+                android:padding="3dp">
+
+                <TextView
+                    android:id="@+id/code6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Blue"
+                    android:textSize="16dp" />
+            </HorizontalScrollView>
 
 
         </LinearLayout>

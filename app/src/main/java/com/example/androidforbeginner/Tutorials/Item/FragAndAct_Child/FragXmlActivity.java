@@ -7,6 +7,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.example.androidforbeginner.R;
+import com.example.androidforbeginner.StatusBar;
 
 public class FragXmlActivity extends AppCompatActivity {
     TextView rowOneTextView,rowTwoTextView,rowThreeTextView;
@@ -16,7 +17,7 @@ public class FragXmlActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_frag_xml);
         setTitle(getString(R.string.frag_xml));
-
+        StatusBar.changingStatusBar(this);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -42,7 +43,8 @@ public class FragXmlActivity extends AppCompatActivity {
                 "</FrameLayout>\n";
         String code2 = "public class MyFragment extends Fragment {\n" +
                 " public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {\n" +
-                " // Inflate the layout for this fragment return inflater.inflate(R.layout.fragment_my, container, false); \n" +
+                " // Inflate the layout for this fragment \n" +
+                "return inflater.inflate(R.layout.fragment_my, container, false); \n" +
                 "\t}\n" +
                 "}\n";
         String code3 = "<fragment android:layout_width=\"match_parent\" \n" +

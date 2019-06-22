@@ -24,6 +24,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/row_one_text_view"
                 android:textColor="#000"
+                android:textSize="16dp"
                 />
 
         </LinearLayout>

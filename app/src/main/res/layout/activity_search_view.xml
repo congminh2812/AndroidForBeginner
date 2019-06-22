@@ -22,9 +22,60 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textSize="16dp"
                 android:id="@+id/row_one_text_view"
                 android:textColor="#000"
                 />
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:padding="3dp"
+                android:background="@drawable/bg_code"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/code1"
+                    android:textColor="@color/Blue"
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </HorizontalScrollView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:id="@+id/row_two_text_view"
+                android:textColor="#000"
+                />
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:padding="3dp"
+                android:background="@drawable/bg_code"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/code2"
+                    android:textColor="@color/Blue"
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </HorizontalScrollView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:id="@+id/row_three_text_view"
+                android:textColor="#000"
+                />
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:padding="3dp"
+                android:background="@drawable/bg_code"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/code3"
+                    android:textColor="@color/Blue"
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </HorizontalScrollView>
 
 
         </LinearLayout>

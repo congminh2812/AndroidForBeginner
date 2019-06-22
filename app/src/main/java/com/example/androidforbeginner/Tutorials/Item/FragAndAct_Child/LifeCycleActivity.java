@@ -7,6 +7,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.example.androidforbeginner.R;
+import com.example.androidforbeginner.StatusBar;
 
 public class LifeCycleActivity extends AppCompatActivity {
     TextView rowOneTextView;
@@ -15,7 +16,7 @@ public class LifeCycleActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_life_cycle);
         setTitle(getString(R.string.lifecycle));
-
+        StatusBar.changingStatusBar(this);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

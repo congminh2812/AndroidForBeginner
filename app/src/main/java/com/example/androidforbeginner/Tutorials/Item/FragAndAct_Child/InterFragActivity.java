@@ -7,6 +7,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.example.androidforbeginner.R;
+import com.example.androidforbeginner.StatusBar;
 
 public class InterFragActivity extends AppCompatActivity {
     TextView rowOneTextView,rowTwoTextView,rowThreeTextView,rowFourTextView,rowFiveTextView;
@@ -16,7 +17,7 @@ public class InterFragActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inter_frag);
         setTitle(getString(R.string.inter_fragment));
-
+        StatusBar.changingStatusBar(this);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

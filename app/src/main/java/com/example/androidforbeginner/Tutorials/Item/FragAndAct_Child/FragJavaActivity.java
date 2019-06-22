@@ -7,6 +7,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.example.androidforbeginner.R;
+import com.example.androidforbeginner.StatusBar;
 
 public class FragJavaActivity extends AppCompatActivity {
     TextView rowOneTextView,rowTwoTextView,rowThreeTextView,rowFourTextView;
@@ -17,7 +18,7 @@ public class FragJavaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_frag_java);
         setTitle(getString(R.string.frag_java));
-
+        StatusBar.changingStatusBar(this);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -37,8 +38,8 @@ public class FragJavaActivity extends AppCompatActivity {
                 "2. Add, remove and replace the desired fragments<br>\n" +
                 "3. Commit the transaction <br>\n" +
                 "<b>Steps for creating Fragments in JAVA:</b><br>\n" +
-                "1. Create a class that extends fragment.\n" +
-                "</p>";
+                "</p>"+
+                "1. Create a class that extends fragment.\n";
         String rowTwo = "2.\tCreate a separate layout file or java objects that contain the appearance ";
         String rowThree = "3. Use the onCreateView method to link its appearance. ";
         String rowFour = "4. Attach the fragment inside the Activity through Java ";

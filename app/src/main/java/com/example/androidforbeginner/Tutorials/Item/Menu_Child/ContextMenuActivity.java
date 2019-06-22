@@ -7,6 +7,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.example.androidforbeginner.R;
+import com.example.androidforbeginner.StatusBar;
 
 public class ContextMenuActivity extends AppCompatActivity {
 
@@ -17,7 +18,7 @@ public class ContextMenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_context_menu);
         setTitle(getString(R.string.context_menu));
-
+        StatusBar.changingStatusBar(this);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -30,46 +31,46 @@ public class ContextMenuActivity extends AppCompatActivity {
         codeTwo = findViewById(R.id.code2);
         codeThree = findViewById(R.id.code3);
 
-        String rowOne = "Android Context Menu: \n" +
-                " Android context menu appears when user long clicks on the item/element. It is also known as floating menu. \n" +
+        String rowOne = "<b><u>* Android Context Menu: </u></b><br/>" +
+                "   Android context menu appears when user long clicks on the item/element. It is also known as floating menu. \n" +
                 "\n" +
-                "1. Define menu items in res/menu.xml \n";
+                "<br/><b>1. Define menu items in res/menu.xml</b>";
         String rowTwo = "In Activity class: \n" +
-                "2. Implement onContextltemSelected(). \n";
-        String rowThree = "3. Define Click Events\n" +
-                " When the user selects a menu item, the system calls onContextltemSelected() method so you can perform the appropriate action. For example: \n";
+                "<br/><b>2. Implement onContextItemSelected()</b>";
+        String rowThree = "<b>3. Define Click Events</b><br/>" +
+                " When the user selects a menu item, the system calls onContextItemSelected() method so you can perform the appropriate action. For example: \n";
 
-        String code1 = "<menu xmlns:androclass=\"http://schemas.android.com/apk/res/android\" >\n" +
-                " <item android: id=\"@+id/iteml\" \n" +
-                "android:title=\"Item 1\"/> \n" +
-                "<item android:id=\"@+id/item2\"\n" +
-                " android:title=\"Item 2\"/> \n" +
-                "<item android: id=\"@+id/item3\"\n" +
-                " android:title=\"Item 3\"/> \n" +
+        String code1 = "<menu xmlns:android=\"http://schemas.android.com/apk/res/android\" >\n" +
+                "   <item android: id=\"@+id/item1\" \n" +
+                "   android:title=\"Item 1\"/> \n" +
+                "   <item android:id=\"@+id/item2\"\n" +
+                "   android:title=\"Item 2\"/> \n" +
+                "   <item android: id=\"@+id/item3\"\n" +
+                "   android:title=\"Item 3\"/> \n" +
                 "</menu>\n";
         String code2 = "@Override \n" +
-                "public void onCreateContextMenu(ContextMenu menu, View v, ContextMenulnfo menulnfo) {\n" +
-                " super.onCreateContextMenu(menu, v, menulnfo);\n" +
-                " Menulnflater inflater = getMenuInflater(); \n" +
-                "inflater.inflate(R.menu.context_menu, menu);\n" +
+                "public void onCreateContextMenu(ContextMenu menu, View v, ContextMenuInfo menulnfo) {\n" +
+                "   super.onCreateContextMenu(menu, v, menuInfo);\n" +
+                "   MenuInflater inflater = getMenuInflater(); \n" +
+                "   inflater.inflate(R.menu.context_menu, menu);\n" +
                 "}\n";
         String code3 = "@Override \n" +
                 "public boolean onContextItemSelected(MenuItem item) { \n" +
-                "AdapterContextMenulnfo info = (AdapterContextMenuInfo) item.getMenuInfo();\n" +
-                " switch (item.getItemId()) { \n" +
-                "case R.id.edit:\n" +
-                " //Your Code here return true; \n" +
-                "case R.id.delete: \n" +
-                "//Your Code here return true;\n" +
-                " default:\n" +
-                " return super.onContextItemSelected(item); \n" +
+                "   AdapterContextMenuInfo info = (AdapterContextMenuInfo) item.getMenuInfo();\n" +
+                "   switch (item.getItemId()) { \n" +
+                "       case R.id.edit:\n" +
+                "       //Your Code here return true; \n" +
+                "       case R.id.delete: \n" +
+                "       //Your Code here return true;\n" +
+                "       default:\n" +
+                "           return super.onContextItemSelected(item); \n" +
                 "} \n";
 
 
 
-        rowOneTextView.setText(rowOne);
-        rowTwoTextView.setText(rowTwo);
-        rowThreeTextView.setText(rowThree);
+        rowOneTextView.setText(android.text.Html.fromHtml(rowOne));
+        rowTwoTextView.setText(android.text.Html.fromHtml(rowTwo));
+        rowThreeTextView.setText(android.text.Html.fromHtml(rowThree));
 
         codeOne.setText(code1);
         codeTwo.setText(code2);

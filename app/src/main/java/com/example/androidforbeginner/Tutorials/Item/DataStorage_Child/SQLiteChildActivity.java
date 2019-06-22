@@ -7,6 +7,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.example.androidforbeginner.R;
+import com.example.androidforbeginner.StatusBar;
 
 public class SQLiteChildActivity extends AppCompatActivity {
     TextView rowOne;
@@ -16,6 +17,7 @@ public class SQLiteChildActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sqlite_child);
         setTitle(getString(R.string.sqlite_child));
+        StatusBar.changingStatusBar(this);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -23,12 +25,15 @@ public class SQLiteChildActivity extends AppCompatActivity {
 
         rowOne = findViewById(R.id.row_one_text_view);
 
-        String row1= "SQLite is a opensource SQL database that stores data to a text file on a device. Android comes in with built in SQLite database implementation. SQLite supports all the relational database features \n" +
-                "Where are the files stored? \n" +
-                "Files are stored in the directory \n" +
-                "data/data/<package-name>/databases   folder\n";
+        String row1= "<b><u>SQLite </u></b><br>" +
+                "is a opensource SQL database that stores data to a text file on a device.<br>" +
+                "Android comes in with built in SQLite database implementation.<br>" +
+                "SQLite supports all the relational database features <br>" +
+                "<b>Where are the files stored ?</b> <br>" +
+                "Files are stored in the directory <br>" +
+                "<i>data/data/<package-name>/databases/folder</i><br>";
 
-        rowOne.setText(row1);
+        rowOne.setText(android.text.Html.fromHtml(row1));
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

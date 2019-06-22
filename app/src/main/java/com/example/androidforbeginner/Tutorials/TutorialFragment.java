@@ -38,7 +38,7 @@ public class TutorialFragment extends Fragment {
         lessonArrayList.add(new Lesson(R.drawable.image_containers,getString(R.string.containers)));
         lessonArrayList.add(new Lesson(R.drawable.image_datastorage,getString(R.string.datastorage)));
         lessonArrayList.add(new Lesson(R.drawable.image_sqlite,getString(R.string.sqlite)));
-        lessonArrayList.add(new Lesson(R.drawable.image_mysql_php,getString(R.string.mysql_php)));
+        //lessonArrayList.add(new Lesson(R.drawable.image_mysql_php,getString(R.string.mysql_php)));
 
         LessonAdapter adapter = new LessonAdapter(lessonArrayList,getContext());
         recyclerView.setAdapter(adapter);

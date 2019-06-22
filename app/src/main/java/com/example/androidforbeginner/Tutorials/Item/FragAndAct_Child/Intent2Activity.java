@@ -7,6 +7,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.example.androidforbeginner.R;
+import com.example.androidforbeginner.StatusBar;
 
 public class Intent2Activity extends AppCompatActivity {
     TextView rowOneTextView;
@@ -15,7 +16,7 @@ public class Intent2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intent2);
         setTitle(getString(R.string.intent_resolution));
-
+        StatusBar.changingStatusBar(this);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -28,8 +29,8 @@ public class Intent2Activity extends AppCompatActivity {
                 " • Data (both URI and data type).<br>\n" +
                 " • Category <br>\n" +
                 "</p>\n" +
-                "<p>Action Test: <br> A filter can have zero or more action elements. To pass, the intent's action must match one of the filter's actions. If the filter does not have an action, then no intents get through. If the intent does not have an action, it will pass but only if the filter has at least one action. </p>\n" +
-                "<p>Data Test:<br> A filter can declare zero or more data elements. Each data element can specify:  \n" +
+                "<p><b>Action Test: </b><br> A filter can have zero or more action elements. To pass, the intent's action must match one of the filter's actions. If the filter does not have an action, then no intents get through. If the intent does not have an action, it will pass but only if the filter has at least one action. </p>\n" +
+                "<p><b>Data Test:</b><br> A filter can declare zero or more data elements. Each data element can specify:  \n" +
                 "MIME type — the data type of the data being matched. For example text/plain Uri - the URI is structured like this:<br>\n" +
                 " < scheme>://<host>:<port>/<path>.\n" +
                 " Here's an example http://myDomain:8080/abc where:\n" +
@@ -44,7 +45,7 @@ public class Intent2Activity extends AppCompatActivity {
                 " • An intent that contains both a URI and a MIME type (either explicit or inferable from the URI) passes the MIME type part of the test only if that type matches a type listed in the filter. It passes the URI part of the test either if its URI matches a URI in the filter or if it has a content or file: URI and the filter does not specify a URI. In other words, a component is presumed to support content:\n" +
                 "or file: URI and the filter does not specify a URI. In other words, a component is presumed to support content and file: data if its filter lists only a MIME type. \n" +
                 "</p>\n" +
-                "<p>Category Test:<br> A filter can declare zero or more category elements. To pass, every category in the intent must match a category in the filter. If the intent does not have a category, it will pass regardless of whether there are any categories in the filter. <br>\n" +
+                "<p><b>Category Test:</b><br> A filter can declare zero or more category elements. To pass, every category in the intent must match a category in the filter. If the intent does not have a category, it will pass regardless of whether there are any categories in the filter. <br>\n" +
                 "For example, the Android system populates the application launcher, the top-level screen that shows the applications that are available for the user to launch, by finding all the activities with intent filters that specify the \"android.intent.action.MAIN\" action and \"android.intent.category.LAUNCHER\" category (as illustrated in the previous section). It then displays the icons and labels of those activities in the launcher. Similarly, it discovers the home screen by looking for the activity with \"android.intent.category.HOME\" in its filter.\n" +
                 "</p>";
 
